@@ -1,18 +1,15 @@
-# Jimmy H. Chen — academic website
+# Jimmy H. Chen — Academic Website
 
-Personal academic website for Dr Jimmy (Huanming) Chen, covering experimental mechanics, advanced materials, architected structures, impact engineering and engineering education.
+A simple static academic website for Dr Jimmy (Huanming) Chen.
 
-## Local preview
+## Preview
 
-```bash
-npm install
-npm run dev
-```
+Open `index.html` in any browser.
 
-## Production build
+## Publish with GitHub Pages
 
-```bash
-npm run build
-```
+1. Push this repository to GitHub.
+2. Open **Settings → Pages**.
+3. Select **Deploy from a branch**, choose `main` and `/ (root)`, then save.
 
-Profile content was assembled in August 2026 from the supplied CV and public academic profiles. Update `app/page.tsx` when new appointments, publications or contact details become available.
+No build step, server, account system or external application is required.
