@@ -1,10 +1,14 @@
-# Jimmy H. Chen — Academic Website
+# Jimmy (Huanming) Chen — Academic Website
 
-A simple static academic website for Dr Jimmy (Huanming) Chen.
+A deliberately simple, static academic website for Dr Jimmy (Huanming) Chen. It uses plain HTML and CSS, with no build step or external dependencies.
 
-## Preview
+## Open in VS Code
 
-Open `index.html` in any browser.
+1. Open this folder in VS Code.
+2. Choose **Terminal → Run Task → Preview academic website**.
+3. Open [http://localhost:8000](http://localhost:8000) in a browser.
+
+For a quick preview, you can also open `index.html` directly in any browser.
 
 ## Publish with GitHub Pages
 
@@ -12,4 +16,4 @@ Open `index.html` in any browser.
 2. Open **Settings → Pages**.
 3. Select **Deploy from a branch**, choose `main` and `/ (root)`, then save.
 
-No build step, server, account system or external application is required.
+No account system or application framework is required.
