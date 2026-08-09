@@ -1,6 +1,13 @@
 # Jimmy (Huanming) Chen — Academic Website
 
-A deliberately simple, static academic website for Dr Jimmy (Huanming) Chen. It uses plain HTML and CSS, with no build step or external dependencies.
+A restrained, multi-page academic website for Dr Jimmy (Huanming) Chen. It uses plain HTML and CSS, with no build step or external dependencies.
+
+## Pages
+
+- `index.html` — homepage and recent work
+- `research.html` — research themes and highlights
+- `publications.html` — complete, deduplicated publication list
+- `cv.html` — appointments, education, teaching, qualifications, funding and awards
 
 ## Open in VS Code
 
