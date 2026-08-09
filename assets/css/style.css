@@ -61,6 +61,16 @@ h2 {
   scroll-margin-top: 78px;
 }
 
+.top-anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  scroll-margin-top: 0;
+  pointer-events: none;
+}
+
 .skip-link {
   position: fixed;
   top: 10px;
