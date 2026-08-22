@@ -958,3 +958,137 @@ h3 {
     break-inside: avoid;
   }
 }
+
+/* Cross-device refinements: preserve image proportions and avoid mobile overflow. */
+@media screen {
+  img {
+    height: auto;
+  }
+
+  .portrait-frame {
+    width: 100%;
+    max-width: 230px;
+  }
+
+  .portrait-frame img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+    object-fit: contain;
+  }
+
+  .profile-sidebar address a,
+  .pub-copy,
+  .research-card-copy,
+  .page-heading,
+  .home-intro {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .talk-video iframe {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .profile-sidebar {
+    grid-template-columns: minmax(145px, 180px) minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .portrait-frame {
+    justify-self: start;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .header-inner,
+  .page,
+  .site-footer > div {
+    width: min(var(--max), calc(100% - 32px));
+  }
+
+  .primary-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 10px;
+    overflow: visible;
+  }
+
+  .primary-nav a {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .profile-sidebar {
+    display: block;
+  }
+
+  .portrait-frame {
+    width: min(64vw, 220px);
+    max-width: 220px;
+    margin: 0 auto 20px;
+  }
+
+  .profile-sidebar address {
+    margin-bottom: 18px;
+  }
+
+  .research-card-media {
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .research-card-media img {
+    height: 100%;
+  }
+
+  .talk-copy {
+    padding: 20px 18px;
+  }
+
+  .research-figure img {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .site-footer > div {
+    min-height: 0;
+    padding: 14px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .header-inner,
+  .page,
+  .site-footer > div {
+    width: min(var(--max), calc(100% - 24px));
+  }
+
+  .brand-name {
+    font-size: 1.55rem;
+  }
+
+  .brand-credentials {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .primary-nav {
+    gap: 0 6px;
+  }
+
+  .primary-nav a {
+    padding-inline: 4px;
+    font-size: 0.68rem;
+  }
+
+  .portrait-frame {
+    width: min(68vw, 210px);
+  }
+}
