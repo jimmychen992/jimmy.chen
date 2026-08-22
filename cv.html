@@ -7,58 +7,83 @@
     <title>Academic CV | Jimmy (Huanming) Chen</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
-      .teaching-table {
+      .teaching-table,
+      .qualification-table {
         width: 100%;
         border-collapse: collapse;
         font-size: 0.84rem;
       }
 
-      .teaching-table td {
+      .teaching-table td,
+      .qualification-table td {
         padding: 12px 14px;
         vertical-align: top;
         border: 1px solid var(--line);
       }
 
-      .teaching-table .teaching-year {
+      .teaching-table .teaching-year,
+      .qualification-table .qualification-year {
         width: 155px;
         color: var(--heading);
         font-weight: 600;
         white-space: nowrap;
       }
 
-      .teaching-modules {
+      .teaching-modules,
+      .qualification-details {
         margin: 0;
         padding: 0;
         list-style: none;
       }
 
-      .teaching-modules li + li {
+      .teaching-modules li + li,
+      .qualification-details li + li {
         margin-top: 3px;
+      }
+
+      .qualification-title {
+        display: block;
+        color: var(--heading);
+        font-weight: 600;
+      }
+
+      .qualification-body {
+        display: block;
+        margin-top: 2px;
+        color: var(--muted);
       }
 
       @media (max-width: 560px) {
         .teaching-table,
         .teaching-table tbody,
         .teaching-table tr,
-        .teaching-table td {
+        .teaching-table td,
+        .qualification-table,
+        .qualification-table tbody,
+        .qualification-table tr,
+        .qualification-table td {
           display: block;
           width: 100%;
         }
 
-        .teaching-table tr {
+        .teaching-table tr,
+        .qualification-table tr {
           border: 1px solid var(--line);
           border-bottom: 0;
         }
 
-        .teaching-table tr:last-child {
+        .teaching-table tr:last-child,
+        .qualification-table tr:last-child {
           border-bottom: 1px solid var(--line);
         }
 
-        .teaching-table td {
+        .teaching-table td,
+        .qualification-table td {
           border: 0;
         }
 
-        .teaching-table .teaching-year {
+        .teaching-table .teaching-year,
+        .qualification-table .qualification-year {
           width: 100%;
           background: var(--soft);
           border-bottom: 1px solid var(--line);
@@ -166,12 +191,46 @@
 
           <section class="cv-section" id="qualifications" aria-labelledby="qualifications-title">
             <h2 class="section-title" id="qualifications-title">Professional qualifications and affiliations</h2>
-            <article class="cv-entry"><time>2026</time><div><h3>Chartered Physicist (CPhys)</h3><p>Institute of Physics.</p></div></article>
-            <article class="cv-entry"><time>2026–present</time><div><h3>IOM3 Accreditation &amp; Approval Assessor</h3><p>Assessor for Registered, Incorporated and Chartered grades.</p></div></article>
-            <article class="cv-entry"><time>2026</time><div><h3>Fellow of the Royal Society of Arts (FRSA)</h3></div></article>
-            <article class="cv-entry"><time>2026</time><div><h3>Fellow of the Higher Education Academy (FHEA)</h3></div></article>
-            <article class="cv-entry"><time>2025</time><div><h3>Chartered Engineer (CEng) &amp; Chartered Scientist (CSci)</h3><p>Institute of Materials, Minerals and Mining.</p></div></article>
-            <article class="cv-entry"><time>2019–present</time><div><h3>Professional memberships</h3><p>IOM3, IOP, Coventry &amp; Warwickshire Materials Society, British Society for Strain Measurement, Society for Experimental Mechanics and oSTEM.</p></div></article>
+            <table class="qualification-table" aria-label="Professional qualifications and affiliations by year">
+              <tbody>
+                <tr>
+                  <td class="qualification-year">2026</td>
+                  <td><span class="qualification-title">Chartered Physicist (CPhys)</span><span class="qualification-body">Institute of Physics.</span></td>
+                </tr>
+                <tr>
+                  <td class="qualification-year">2026</td>
+                  <td><span class="qualification-title">IOM3 Accreditation &amp; Approval Assessor</span><span class="qualification-body">Assessor for Registered, Incorporated and Chartered grades in the Institute of Materials, Minerals and Mining (IOM3).</span></td>
+                </tr>
+                <tr>
+                  <td class="qualification-year">2026</td>
+                  <td><span class="qualification-title">Fellow of the Royal Society of Arts (FRSA)</span></td>
+                </tr>
+                <tr>
+                  <td class="qualification-year">2026</td>
+                  <td><span class="qualification-title">Fellow of the Higher Education Academy (FHEA)</span></td>
+                </tr>
+                <tr>
+                  <td class="qualification-year">2025</td>
+                  <td><span class="qualification-title">Chartered Engineer (CEng)</span><span class="qualification-body">The Engineering Council UK.</span></td>
+                </tr>
+                <tr>
+                  <td class="qualification-year">2025</td>
+                  <td><span class="qualification-title">Chartered Scientist (CSci)</span><span class="qualification-body">The Science Council UK.</span></td>
+                </tr>
+                <tr>
+                  <td class="qualification-year">2025</td>
+                  <td><span class="qualification-title">Associate Fellow of the Higher Education Academy (AFHEA)</span></td>
+                </tr>
+                <tr>
+                  <td class="qualification-year">2024</td>
+                  <td><span class="qualification-title">Member of IOM3 (MIMMM)</span><span class="qualification-body">The Institute of Materials, Minerals and Mining (IOM3).</span></td>
+                </tr>
+                <tr>
+                  <td class="qualification-year">2019–present</td>
+                  <td><span class="qualification-title">Professional memberships</span><span class="qualification-body">IOM3, IOP, Coventry &amp; Warwickshire Materials Society, British Society for Strain Measurement, Society for Experimental Mechanics and oSTEM.</span></td>
+                </tr>
+              </tbody>
+            </table>
           </section>
 
           <section class="cv-section" id="funding" aria-labelledby="funding-title">
