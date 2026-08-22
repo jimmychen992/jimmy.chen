@@ -6,6 +6,65 @@
     <meta name="description" content="Academic curriculum vitae of Dr Jimmy (Huanming) Chen.">
     <title>Academic CV | Jimmy (Huanming) Chen</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      .teaching-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.84rem;
+      }
+
+      .teaching-table td {
+        padding: 12px 14px;
+        vertical-align: top;
+        border: 1px solid var(--line);
+      }
+
+      .teaching-table .teaching-year {
+        width: 155px;
+        color: var(--heading);
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .teaching-modules {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .teaching-modules li + li {
+        margin-top: 3px;
+      }
+
+      @media (max-width: 560px) {
+        .teaching-table,
+        .teaching-table tbody,
+        .teaching-table tr,
+        .teaching-table td {
+          display: block;
+          width: 100%;
+        }
+
+        .teaching-table tr {
+          border: 1px solid var(--line);
+          border-bottom: 0;
+        }
+
+        .teaching-table tr:last-child {
+          border-bottom: 1px solid var(--line);
+        }
+
+        .teaching-table td {
+          border: 0;
+        }
+
+        .teaching-table .teaching-year {
+          width: 100%;
+          background: var(--soft);
+          border-bottom: 1px solid var(--line);
+        }
+      }
+    </style>
   </head>
   <body>
     <a class="skip-link" href="#content">Skip to content</a>
@@ -65,16 +124,44 @@
 
           <section class="cv-section" id="teaching" aria-labelledby="teaching-title">
             <h2 class="section-title" id="teaching-title">Teaching experience</h2>
-            <article class="cv-entry"><time>2026</time><div><h3>Sustainability: heat-exchanger design, solar energy and photovoltaics</h3><p>Year 1 undergraduate lecture; 186 registrations.</p></div></article>
-            <article class="cv-entry"><time>2025–present</time><div><h3>Applied Solid Mechanics and laboratory classes</h3><p>Year 2 undergraduate lecture; 248 registrations.</p></div></article>
-            <article class="cv-entry"><time>2025–present</time><div><h3>Heat and Mass Transfer and laboratory classes</h3><p>Year 2 undergraduate lecture; 220 registrations.</p></div></article>
-            <article class="cv-entry"><time>2025</time><div><h3>Essential Mathematics Skills for Engineers</h3><p>Year 1 lecture and tutorials; 370 registrations across mechanical, bioengineering and chemical engineering.</p></div></article>
-            <article class="cv-entry"><time>2025</time><div><h3>Engineering Design Optimisation and Decision Making</h3><p>Year 4 postgraduate/undergraduate lecture; 116 registrations.</p></div></article>
-            <article class="cv-entry"><time>2025</time><div><h3>Project Management: Structure, Design and Construction</h3><p>Oxford Certificate Programme at Worcester College; 25+ registrations.</p></div></article>
-            <article class="cv-entry"><time>2024–2025</time><div><h3>Polymers, Composites and Ceramics</h3><p>Year 3 interdisciplinary teaching and keynote sessions at Wolfson College; 30+ registrations.</p></div></article>
-            <article class="cv-entry"><time>2024–2025</time><div><h3>Materials, Metals and laboratory classes</h3><p>Year 3 undergraduate lecture; 45+ registrations.</p></div></article>
-            <article class="cv-entry"><time>2024</time><div><h3>Structures, Mechanics and laboratory classes</h3><p>Year 1 Engineering Science teaching; 90+ registrations.</p></div></article>
-            <article class="cv-entry"><time>2019–2025</time><div><h3>Material Testing laboratory</h3><p>Year 4 laboratory manager; 90+ registrations. Managed and supervised doctoral and MEng students across material testing, thermo-mechanical analysis, impact engineering and 3D-printing laboratories.</p></div></article>
+            <table class="teaching-table" aria-label="Teaching experience by academic year">
+              <tbody>
+                <tr>
+                  <td class="teaching-year">2026–present</td>
+                  <td>
+                    <ul class="teaching-modules">
+                      <li>Year 1: Statics and Dynamics of Complex Mechanics</li>
+                      <li>Year 1: Thermodynamics &amp; Fluids</li>
+                      <li>Year 2: Mechanics of Materials</li>
+                      <li>Year 3: Energy Engineering</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="teaching-year">2025–2026</td>
+                  <td>
+                    <ul class="teaching-modules">
+                      <li>Year 1: Mathematics for Engineering, Sustainable Materials (solar science)</li>
+                      <li>Year 2: Applied Solid Mechanics</li>
+                      <li>Year 2: Heat and Mass Transfer</li>
+                      <li>Year 3: Materials and Nonlinear Structures</li>
+                      <li>Year 3: Engineering Drawing and Design Optimisation</li>
+                      <li>Year 4: Sustainable Engineering Management</li>
+                      <li>Year 4: Finite-Element Modelling and Practice</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="teaching-year">2024–2025</td>
+                  <td>
+                    <ul class="teaching-modules">
+                      <li>Year 1: Mechanics</li>
+                      <li>Year 3: Materials (Polymers, Composites, Metals)</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </section>
 
           <section class="cv-section" id="qualifications" aria-labelledby="qualifications-title">
