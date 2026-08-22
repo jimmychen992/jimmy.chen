@@ -8,21 +8,24 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
       .teaching-table,
-      .qualification-table {
+      .qualification-table,
+      .funding-table {
         width: 100%;
         border-collapse: collapse;
         font-size: 0.84rem;
       }
 
       .teaching-table td,
-      .qualification-table td {
+      .qualification-table td,
+      .funding-table td {
         padding: 12px 14px;
         vertical-align: top;
         border: 1px solid var(--line);
       }
 
       .teaching-table .teaching-year,
-      .qualification-table .qualification-year {
+      .qualification-table .qualification-year,
+      .funding-table .funding-year {
         width: 155px;
         color: var(--heading);
         font-weight: 600;
@@ -41,13 +44,15 @@
         margin-top: 3px;
       }
 
-      .qualification-title {
+      .qualification-title,
+      .funding-title {
         display: block;
         color: var(--heading);
         font-weight: 600;
       }
 
-      .qualification-body {
+      .qualification-body,
+      .funding-body {
         display: block;
         margin-top: 2px;
         color: var(--muted);
@@ -61,29 +66,37 @@
         .qualification-table,
         .qualification-table tbody,
         .qualification-table tr,
-        .qualification-table td {
+        .qualification-table td,
+        .funding-table,
+        .funding-table tbody,
+        .funding-table tr,
+        .funding-table td {
           display: block;
           width: 100%;
         }
 
         .teaching-table tr,
-        .qualification-table tr {
+        .qualification-table tr,
+        .funding-table tr {
           border: 1px solid var(--line);
           border-bottom: 0;
         }
 
         .teaching-table tr:last-child,
-        .qualification-table tr:last-child {
+        .qualification-table tr:last-child,
+        .funding-table tr:last-child {
           border-bottom: 1px solid var(--line);
         }
 
         .teaching-table td,
-        .qualification-table td {
+        .qualification-table td,
+        .funding-table td {
           border: 0;
         }
 
         .teaching-table .teaching-year,
-        .qualification-table .qualification-year {
+        .qualification-table .qualification-year,
+        .funding-table .funding-year {
           width: 100%;
           background: var(--soft);
           border-bottom: 1px solid var(--line);
@@ -235,8 +248,18 @@
 
           <section class="cv-section" id="funding" aria-labelledby="funding-title">
             <h2 class="section-title" id="funding-title">Funding</h2>
-            <article class="cv-entry"><time>2026</time><div><h3>Education Scholarship · £1,000</h3><p>Queen Mary University of London; policy and assessment pedagogy.</p></div></article>
-            <article class="cv-entry"><time>2025</time><div><h3>Industry Funding · £120,000</h3><p>Fuerda Smartech Co., Ltd., Ingolstadt, Germany.</p></div></article>
+            <table class="funding-table" aria-label="Funding by year">
+              <tbody>
+                <tr>
+                  <td class="funding-year">2026</td>
+                  <td><span class="funding-title">Education Scholarship in policy and assessment pedagogy</span><span class="funding-body">Queen Mary University of London</span></td>
+                </tr>
+                <tr>
+                  <td class="funding-year">2025</td>
+                  <td><span class="funding-title">Industry Funding with KTP programme</span><span class="funding-body">Automobile bumper design, optimisation, and analysis</span></td>
+                </tr>
+              </tbody>
+            </table>
           </section>
 
           <section class="cv-section" id="awards" aria-labelledby="awards-title">
